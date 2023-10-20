@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "DevFlow",
