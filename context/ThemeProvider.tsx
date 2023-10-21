@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 interface ContextPropsType {
   mode: string;
-  handleThemeChange: (string: string) => void;
+  setMode: (mode: string) => void;
 }
 const ThemeContext = createContext<ContextPropsType | undefined>(undefined);
 
@@ -26,8 +26,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     handleThemeChange();
   }, [mode]);
+
   return (
-    <ThemeContext.Provider value={{ mode, handleThemeChange }}>
+    <ThemeContext.Provider value={{ mode, setMode }}>
       {children}
     </ThemeContext.Provider>
   );
