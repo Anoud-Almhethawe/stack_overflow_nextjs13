@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import GlobalSearch from "../navbar/GlobalSearch";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 
